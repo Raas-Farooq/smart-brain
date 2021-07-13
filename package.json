@@ -54,7 +54,7 @@
   "bugs": {
     "url": "https://github.com/Raas-Farooq/smart-brain/issues"
   },
-  "homepage": "https://github.com/Raas-Farooq/smart-brain#readme",
+  "homepage": ".",
   "devDependencies": {
     "babel-plugin-react-require": "^3.1.3"
   }
