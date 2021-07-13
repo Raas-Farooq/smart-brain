@@ -9,7 +9,7 @@ import FaceRecognition from './Components/FaceRecognition/FaceRecognition'
 import Particles from 'react-particles-js';
   // eslint-disable-next-line
 import { render } from '@testing-library/react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 
 
@@ -99,7 +99,7 @@ constructor() {
 
     onButtonSubmit = () => {
       this.setState({imgUrl: this.state.input});
-          fetch('http://localhost:3000/imageUrl', {
+          fetch('https://guarded-plateau-99945.herokuapp.com/imageUrl', {
             method:'post',
             headers : {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -109,7 +109,7 @@ constructor() {
           .then(response => response.json()) 
           .then(response => {
             if (response){
-              fetch('http://localhost:3000/image', {
+              fetch('https://guarded-plateau-99945.herokuapp.com/image', {
               method:'put',
               headers : {'Content-Type': 'application/json'},
               body: JSON.stringify({
